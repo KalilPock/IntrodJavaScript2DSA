@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
 </head>
@@ -20,36 +21,14 @@
 
     <h2 id="resultado"></h2>
 
-    <script>
+    <h2>TESTE</h2>
 
-    //Função de calculo de media
-    function calcularMedia(){
+    <input id="valor1" type="text">
+    <input id="valor2" type="text">
+    <input id="valor3" type="text">
+    
 
-        // == Comparacão SE VALOR IGUAL = TRUE
-        // & Um valor e outro OS DOIS VERDADE = TRUE
-        // || um valor ou outro SOMENTE UM VERDADE = TRUE
+    <script src="dom.js"></script>
 
-        //Captando valores de entrada STRING
-        const inputValor1 = document.getElementById('valor1');
-        const inputValor2 = document.getElementById('valor2');
-
-        //Convertendo valores STRING em FLOAT || Converte "texto" para "numeros"
-        const valor1 = parseFloat(inputValor1.value);
-        const valor2 = parseFloat(inputValor2.value);
-
-        //Se valor1 OU valor2 nao for um numero
-        if(isNaN(valor1) || isNaN(valor2)){
-            alert("Por favor, insira apenas numeros!")
-            return; //Interrompendo a função
-        }
-
-        const soma = valor1 + valor2;
-        const media = soma / 2;
-
-        //Exibe o resultado no elemento H2
-        const elementoResultado = document.getElementById('resultado');
-        elementoResultado.textContent = "Sua média é: " + media.toFixed(2);
-    }
-    </script>
 </body>
 </html>
