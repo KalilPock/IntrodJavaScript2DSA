@@ -12,7 +12,7 @@ function calcularMedia(){
         //sintaxe Query Selector pela TAG ´button´
         const botao = document.querySelector('button')
 
-        const todosInputs = document.querySelectorAll('label');
+        const todosInputs = document.querySelectorAll('button');
 
         todosInputs.forEach(input => {
             input.classList.add('destaque-input');
