@@ -5,7 +5,6 @@ function calcularMedia(){
         // & Um valor e outro OS DOIS VERDADE = TRUE
         // || um valor ou outro SOMENTE UM VERDADE = TRUE
 
-        
         //sintaxe Query Selector
         document.querySelector("#seletor-css")
         const inputValor1Query = document.querySelector('#valor1')
@@ -13,12 +12,11 @@ function calcularMedia(){
         //sintaxe Query Selector pela TAG ´button´
         const botao = document.querySelector('button')
 
-        const todosInputs = document.querySelectorAll('input[type="text"]');
+        const todosInputs = document.querySelectorAll('label');
 
         todosInputs.forEach(input => {
             input.classList.add('destaque-input');
         });
-
 
         //Captando valores de entrada STRING
         const inputValor1 = document.getElementById('valor1');
